@@ -40,6 +40,12 @@ LD_PRELOAD=/usr/lib/x86_64-linux-gnu/libGLEW.so
 Run the script
 ``` Bash
 bash install_sc2.sh
+cd mat/scripts
+export SC2PATH="/{PATH_TO}/StarCraftII"
+./train_smac_multi.sh
+./train_smac.sh
+
+tensorboard --logdir=./ --port=8080
 ```
 Or you could install them manually to other path you like, just follow here: https://github.com/oxwhirl/smac.
 
